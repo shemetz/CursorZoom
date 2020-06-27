@@ -1,13 +1,15 @@
 {
-    "name": "zoom-fix",
-    "title": "Zoom Fix",
-    "description": "Zooming will be centered around the cursor, instead of the center of the screen.",
-    "author": "shem",
-    "version": "1.0.0",
-    "compatibleCoreVersion": "0.6.4",
-    "scripts": ["zoomfix.js"],
-    "minimumCoreVersion": "0.6.0",
-    "url": "https://github.com/itamarcu/ZoomFix",
-    "manifest": "https://raw.githubusercontent.com/itamarcu/ZoomFix/master/module.json",
-    "download": "https://github.com/itamarcu/ZoomFix/raw/master/ZoomFix.zip"
+  "name": "cursor-zoom",
+  "title": "Cursor Zoom",
+  "description": "Zooming will be centered around the cursor, instead of the center of the screen.",
+  "author": "shem",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.6.0",
+  "compatibleCoreVersion": "0.6.4",
+  "scripts": [
+    "cursorzoom.js"
+  ],
+  "url": "https://github.com/itamarcu/CursorZoom",
+  "manifest": "https://raw.githubusercontent.com/itamarcu/CursorZoom/master/module.json",
+  "download": "https://github.com/itamarcu/CursorZoom/archive/master.zip"
 }

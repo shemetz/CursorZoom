@@ -1,13 +1,13 @@
-console.log("ZoomFix is setting up...");
+console.log("CursorZoom is setting up...");
 
-let zoomFixEnabled = false
+let cursorZoomEnabled = false
 
 /**
  * Will now zoom around cursor.
  */
-function _onMouseWheel_Fixed(event) {
+function _onMouseWheel_Override(event) {
     let dz = (event.deltaY < 0) ? 1.05 : 0.95;
-    if (!zoomFixEnabled) {
+    if (!cursorZoomEnabled) {
         this.pan({scale: dz * canvas.stage.scale.x});
         return;
     }
@@ -17,7 +17,7 @@ function _onMouseWheel_Fixed(event) {
     const min = 1 / Math.max(d.width / window.innerWidth, d.height / window.innerHeight, max);
     if (scale > max || scale < min) {
         this.pan({scale: scale > max ? max : min});
-        console.log(`ZoomFix | scale limit reached (${scale}).`)
+        console.log(`CursorZoom | scale limit reached (${scale}).`)
         return
     }
     // Acquire the cursor position transformed to Canvas coordinates
@@ -30,7 +30,7 @@ function _onMouseWheel_Fixed(event) {
 }
 
 Hooks.on("init", function () {
-    Canvas.prototype._onMouseWheel = _onMouseWheel_Fixed;
-    zoomFixEnabled = true
-    console.log("ZoomFix is done setting up!");
+    Canvas.prototype._onMouseWheel = _onMouseWheel_Override;
+    cursorZoomEnabled = true
+    console.log("CursorZoom is done setting up!");
 });
