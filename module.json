@@ -3,7 +3,7 @@
   "title": "Cursor Zoom",
   "description": "Zooming will be centered around the cursor, instead of the center of the screen.",
   "author": "shem",
-  "version": "1.0.0",
+  "version": "1.0.0-compatible-with-0.6.5",
   "minimumCoreVersion": "0.6.0",
   "compatibleCoreVersion": "0.6.5",
   "scripts": [
