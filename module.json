@@ -1,11 +1,11 @@
 {
   "name": "cursor-zoom",
-  "title": "Cursor Zoom",
+  "title": "Cursor Zoom (deprecated)",
   "description": "Zooming will be centered around the cursor, instead of the center of the screen.",
   "author": "shem",
-  "version": "1.0.0-compatible-with-0.6.5",
+  "version": "1.0.0-compatible-with-0.6.6",
   "minimumCoreVersion": "0.6.0",
-  "compatibleCoreVersion": "0.6.5",
+  "compatibleCoreVersion": "0.6.6",
   "scripts": [
     "cursorzoom.js"
   ],
