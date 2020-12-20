@@ -11,5 +11,15 @@
   ],
   "url": "https://github.com/itamarcu/CursorZoom",
   "manifest": "https://raw.githubusercontent.com/itamarcu/CursorZoom/master/module.json",
-  "download": "https://github.com/itamarcu/CursorZoom/archive/master.zip"
+  "download": "https://github.com/itamarcu/CursorZoom/archive/master.zip",
+  "manifestPlusVersion": "1.0.0",
+  "deprecated": {
+    "reason": "Use Zoom/Pan Options instead",
+    "alternatives": [
+      {
+        "name": "zoom-pan-options",
+        "manifest": "https://github.com/itamarcu/ZoomPanOptions/raw/master/module.json"
+      }
+    ]
+  }
 }
